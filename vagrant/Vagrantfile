@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-16.04-i386"
   config.vm.box_version = "= 2.3.5"
-  config.vm.network "forwarded_port", guest: 80, host: 8080,
+  config.vm.network "forwarded_port", guest: 80, host: 8000,
     auto_correct: true
 
   # Work around disconnected virtual network cable.
